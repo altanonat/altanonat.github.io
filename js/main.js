@@ -164,13 +164,14 @@
         body: new FormData(form),
         headers: { Accept: "application/json" }
       })
-        .then(function (res) {
-          if (res.ok) {
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.success) {
             status.textContent = "Thank you! Your message has been sent.";
             status.className = "form-status success";
             form.reset();
           } else {
-            throw new Error("Request failed");
+            throw new Error(data.message || "Request failed");
           }
         })
         .catch(function () {
