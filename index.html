@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altan Onat — Associate Professor</title>
+  <meta name="description" content="Personal academic website of Altan Onat, Associate Professor at Eskisehir Technical University, Department of Electrical and Electronics Engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container">
+      <a href="#home" class="nav-logo">AO<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow reveal">Associate Professor · Electrical &amp; Electronics Engineering</p>
+      <h1 class="hero-title reveal">Altan Onat</h1>
+      <p class="hero-subtitle reveal">
+        Department of Electrical and Electronics Engineering<br />
+        <strong>Eskisehir Technical University</strong>, Eskisehir, Turkiye
+      </p>
+      <div class="hero-tags reveal">
+        <span class="tag">Railway Vehicle Dynamics</span>
+        <span class="tag">State &amp; Parameter Estimation</span>
+        <span class="tag">Kalman Filtering</span>
+        <span class="tag">Swarm Intelligence</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Condition Monitoring</span>
+      </div>
+      <div class="hero-cta reveal">
+        <a href="#publications" class="btn btn-primary">View Publications</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-label">Journal Articles</span></div>
+        <div class="stat"><span class="stat-num" data-count="14">0</span><span class="stat-label">Conference Papers</span></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Research Projects</span></div>
+        <div class="stat"><span class="stat-num" data-count="14">0</span><span class="stat-label">Years in Academia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am an Associate Professor in the Department of Electrical and Electronics Engineering
+              at Eskisehir Technical University, Turkiye. My research focuses on estimation theory and
+              its applications to rail system vehicles — including adhesion and friction estimation at the
+              wheel–rail interface, dynamic weigh-in-motion systems, and intelligent condition monitoring.
+            </p>
+            <p>
+              I received my Ph.D. from the University of Pardubice (Czech Republic) in 2017, where I worked on
+              estimation of states and parameters from the dynamic response of a wheelset. Between 2019 and 2020,
+              I was a Research Associate with the Future Mobility Research Group at Newcastle University (UK),
+              contributing to the Horizon 2020 project ETALON and the Active Radial Suspension System (ARSS) project.
+            </p>
+            <p>
+              I also serve as an Assistant Editor of the journal <em>Railway Engineering</em> (TR DIZIN),
+              published by the Association of Railway Engineers.
+            </p>
+          </div>
+          <div class="about-card reveal">
+            <h3>Quick Facts</h3>
+            <ul class="fact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                Ph.D., University of Pardubice (2017)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                Former Research Associate, Newcastle University, UK
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                Assistant Editor, Railway Engineering journal
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Co-head of Department (2021–2024)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2013 — 2017</span>
+              <h3>Doctoral Degree (Ph.D.)</h3>
+              <p class="timeline-org">University of Pardubice · Transport Means and Infrastructure</p>
+              <p class="timeline-detail"><strong>Thesis:</strong> Estimation of states and parameters from dynamic response of wheelset (2017)</p>
+              <p class="timeline-detail"><strong>Advisors:</strong> Michael Lata, Petr Voltr</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2010 — 2012</span>
+              <h3>Master's Degree (With Thesis)</h3>
+              <p class="timeline-org">Eskisehir Osmangazi University · Electrical-Electronics Engineering (English)</p>
+              <p class="timeline-detail"><strong>Thesis:</strong> Adaptive trajectory tracking control of mobile robots using multiple models approach (2012)</p>
+              <p class="timeline-detail"><strong>Advisor:</strong> Metin Ozkan</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2006 — 2010</span>
+              <h3>Bachelor's Degree</h3>
+              <p class="timeline-org">Eskisehir Osmangazi University · Mechanical Engineering</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2004 — 2009</span>
+              <h3>Bachelor's Degree</h3>
+              <p class="timeline-org">Eskisehir Osmangazi University · Electrical-Electronics Engineering (English)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Experience ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+
+        <h3 class="subsection-title reveal">Academic Positions</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2026 — Present</span>
+              <h3>Associate Professor</h3>
+              <p class="timeline-org">Eskisehir Technical University, TR · Engineering Faculty — Electrical and Electronics Engineering</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2021 — 2026</span>
+              <h3>Assistant Professor</h3>
+              <p class="timeline-org">Eskisehir Technical University, TR · Engineering Faculty — Electrical and Electronics Engineering</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2019 — 2020</span>
+              <h3>Research Associate (Postdoctoral Researcher)</h3>
+              <p class="timeline-org">Newcastle University, UK · School of Engineering — Future Mobility Research Group</p>
+              <p class="timeline-detail">Conducted research as a postdoctoral researcher on various projects.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2012 — 2021</span>
+              <h3>Research Assistant</h3>
+              <p class="timeline-org">Eskisehir Technical University, TR · Engineering Faculty — Electrical and Electronics Engineering</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title reveal">Administrative &amp; Editorial</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2021 — 2024</span>
+              <h3>Co-head of Department</h3>
+              <p class="timeline-org">Eskisehir Technical University · Faculty of Engineering, Department of Electrical-Electronics Engineering</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2020 — Present</span>
+              <h3>Assistant Editor</h3>
+              <p class="timeline-org">Railway Engineering (TR DIZIN) · Association of Railway Engineers</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="subsection-title reveal">Non-academic Experience</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2011 — 2012</span>
+              <h3>Software Engineer</h3>
+              <p class="timeline-org">Lider Technology Development Engineering Industry and Trade Co. Ltd.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2010 — 2011</span>
+              <h3>Project Coordinator</h3>
+              <p class="timeline-org">Hisbim Information and Communication Technologies Industry and Trade Inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Research Projects</h2>
+        <div class="project-grid">
+          <div class="project-card reveal">
+            <div class="project-top">
+              <span class="badge badge-progress">In Progress</span>
+              <span class="project-year">2025 —</span>
+            </div>
+            <h3>Development of AI-based Noiseless Adhesion Estimation in Rail System Vehicles</h3>
+            <p class="project-role">Researcher</p>
+            <p class="project-meta">Scientific Research Project Supported by Higher Education Institutions · National</p>
+            <p class="project-meta">Co-researchers: Abdulkadir Zirek, Can Uysal — Eskisehir Technical University, TR</p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-top">
+              <span class="badge badge-done">Completed</span>
+              <span class="project-year">2022 — 2023</span>
+            </div>
+            <h3>Development of Simulation-Based Intelligent Condition Monitoring Algorithms in Rail Systems</h3>
+            <p class="project-role">Researcher</p>
+            <p class="project-meta">Scientific Research Project Supported by Higher Education Institutions · National</p>
+            <p class="project-meta">Co-researcher: Abdulkadir Zirek — Eskisehir Technical University, TR</p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-top">
+              <span class="badge badge-intl">International</span>
+              <span class="project-year">2019 — 2020</span>
+            </div>
+            <h3>ETALON — Energy Harvesting for Signalling and Communication Systems</h3>
+            <p class="project-role">Researcher</p>
+            <p class="project-meta">Horizon 2020 · Newcastle University, UK</p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-top">
+              <span class="badge badge-intl">International</span>
+              <span class="project-year">2019 — 2020</span>
+            </div>
+            <h3>Active Radial Suspension System (ARSS)</h3>
+            <p class="project-role">Researcher</p>
+            <p class="project-meta">Other Official Organisations and Institutions · Newcastle University, UK</p>
+          </div>
+          <div class="project-card reveal">
+            <div class="project-top">
+              <span class="badge badge-done">Completed</span>
+              <span class="project-year">2011 — 2012</span>
+            </div>
+            <h3>TR41-10-01-133 Graphical Flight Training Simulator for Civil Aircrafts</h3>
+            <p class="project-role">Researcher</p>
+            <p class="project-meta">Ministry of Development · National</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== Publications ===== -->
+    <section class="section" id="publications">
+      <div class="container">
+        <h2 class="section-title reveal">Publications</h2>
+
+        <div class="pub-filters reveal" id="pubFilters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="journal">Journal Articles</button>
+          <button class="filter-btn" data-filter="conference">Conference Papers</button>
+          <button class="filter-btn" data-filter="book">Book Chapters</button>
+          <button class="filter-btn" data-filter="national">National Journals</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <div class="pub-group" data-group="journal">
+          <h3 class="pub-group-title">Articles in International Refereed Journals</h3>
+          <ol class="pub-list">
+            <li class="reveal"><span class="pub-cite">Onat, A., Kayaalp, B. T. (2025). Novel swarm intelligence-based multiple models approaches for parameter estimation: Application to a railway vehicle system with traction. <em>Ain Shams Engineering Journal</em>, 16(12).</span></li>
+            <li class="reveal"><span class="pub-cite">Solak, A., Onat, A., Kilinc, O. (2025). An Improved Bare Bones Particle Swarm Optimization Algorithm Based on Sequential Update Mechanism and a Modified Structure. <em>IEEE Access</em>, 13.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Kayaalp, B. T. (2021). A Joint Unscented Kalman Filter-Based Dynamic Weigh in Motion System for Railway Vehicles With Traction. <em>IEEE Sensors Journal</em>, 21(14), 15709–15718.</span></li>
+            <li class="reveal"><span class="pub-cite">Zirek, A., Onat, A. (2020). A novel anti-slip control approach for railway vehicles with traction based on adhesion estimation with swarm intelligence. <em>Railway Engineering Science</em>, 28(4), 346–364.</span></li>
+            <li class="reveal"><span class="pub-cite">Uysal, C., Onat, A., Filik, T. (2020). Non-Contact Respiratory Rate Estimation in Real-Time With Modified Joint Unscented Kalman Filter. <em>IEEE Access</em>, 8, 99445–99457.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P. (2020). Particle swarm optimization based parametrization of adhesion and creep force models for simulation and modelling of railway vehicle systems with traction. <em>Simulation Modelling Practice and Theory</em>, 99, 102026.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P. (2020). Velocity measurement-based friction estimation for railway vehicles running on adhesion limit: swarm intelligence-based multiple models approach. <em>Journal of Intelligent Transportation Systems</em>, 24(1), 93–107.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P. (2020). Correction. <em>Journal of Intelligent Transportation Systems</em>, 24(1).</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Kayaalp, B. T. (2019). A Novel Methodology for Dynamic Weigh in Motion System for Railway Vehicles With Traction. <em>IEEE Transactions on Vehicular Technology</em>, 68(11), 10545–10558.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A. (2019). A Novel and Computationally Efficient Joint Unscented Kalman Filtering Scheme for Parameter Estimation of a Class of Nonlinear Systems. <em>IEEE Access</em>, 7, 31634–31655.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P., Lata, M. (2018). An unscented Kalman filter-based rolling radius estimation methodology for railway vehicles with traction. <em>Proceedings of the Institution of Mechanical Engineers, Part F: Journal of Rail and Rapid Transit</em>, 232(6), 1686–1702.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P., Lata, M. (2017). A new friction condition identification approach for wheel-rail interface. <em>International Journal of Rail Transportation</em>, 5(3), 127–144.</span></li>
+            <li class="reveal"><span class="pub-cite">Kilinc, O., Onat, A. (2015). Basic Test Procedure in Measurement with Strain Gauge: An Explanatory Example Towards Railway Vehicle Testing. <em>Electronic Journal Of Occupational Improvement And Research</em>, 2, 151–164.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Ozkan, M. (2015). Dynamic adaptive trajectory tracking control of nonholonomic mobile robots using multiple models approach. <em>Advanced Robotics</em>, 29(14), 913–928.</span></li>
+          </ol>
+        </div>
+
+        <div class="pub-group" data-group="conference">
+          <h3 class="pub-group-title">Papers Presented at International Scientific Meetings</h3>
+          <ol class="pub-list">
+            <li class="reveal"><span class="pub-cite">Onat, A. (2025). Application of Modified Bare Bones Particle Swarm Optimization to Nonlinear Regression Problems. <em>5th Global Conference on Engineering Research</em>, 186.</span></li>
+            <li class="reveal"><span class="pub-cite">Karapinar, S., Onat, A. (2025). Data-Driven Modeling and Analysis of the Rabinovich-Fabrikant System. <em>5. Interdisciplinary Conference on Electrics and Computer (INTCEC 2025)</em>.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A. (2025). Application of a New Numerical Approach for Neural Ordinary Differential Equations. <em>6th International Eurasian Conference on Science, Engineering and Technology (EurasianSciEnTech 2025)</em>.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Oruklu, K. (2023). A New Numerical Approach for Simulation of Power Electronic Converters. <em>2023 14th International Conference on Electrical and Electronics Engineering (ELECO)</em>.</span></li>
+            <li class="reveal"><span class="pub-cite">Oruklu, K., Onat, A. (2023). Parameter Estimation of DC-DC Converters Based on Simulated Annealing Algorithm. <em>World Symposium on Intelligent System, Electronic and Optical Devices 2023</em>, 18–19.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Kayaalp, B. T. (2018). Normal Load Estimation by Using a Swarm Intelligence Based Multiple Models Approach. <em>4th International Symposium on Railway System Engineering</em>, 489–496.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P. (2017). Swarm Intelligence Based Multiple Model Approach for Friction Estimation at Wheel-Rail Interface. <em>The 5th International Symposium on Engineering, Artificial Intelligence and Applications (ISEAIA 2017)</em>.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Zirek, A., Voltr, P. (2017). Dynamic Modelling and Numerical Simulation of a Tram Wheel Test Stand. <em>The 3rd International Symposium on Electrical Railway Transportation Systems, ERUSIS 2017</em>.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Kilinc, O., Lata, M. (2016). A linear Kalman filtering scheme for estimation of secondary vertical suspension of railway vehicles. <em>21st International Conference on VIBROENGINEERING</em>, 7, 124–128.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P., Lata, M. (2016). Estimation of Primary Suspension Parameters from Lateral Dynamic Response of a Wheelset. <em>22nd International Conference ENGINEERING MECHANICS 2016</em>, 434–437.</span></li>
+            <li class="reveal"><span class="pub-cite">Kilinc, O., Onat, A. (2015). Simple Test Procedure of Strain Gage Measurement: An Introductory Implementation Towards Railway Vehicle Testing. <em>1st International Workshop On Construction and Electricity Applications</em>, 393–405.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P., Lata, M. (2015). Analysis of Lateral Dynamical Response of a Wheelset During Traction. <em>22nd International Conference "Current Problems in Rail Vehicles PRORAIL 2015"</em>, 2, 73–82.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Voltr, P., Lata, M. (2015). Nonlinear Wheel/Rail Contact Geometry Characteristics and Determination of Hertzian Contact. <em>Advanced Manufacturing and Repair Technologies in Vehicle Industry 32th International Colloquium</em>, 145–152.</span></li>
+            <li class="reveal"><span class="pub-cite">Onat, A., Ozkan, M. (2012). Trajectory Tracking Control of Nonholonomic Wheeled Mobile Robots Combined Direct and Indirect Adaptive Control using Multiple Models Approach. <em>9th International Conference on Informatics in Control, Automation and Robotics (ICINCO)</em>, 95–104.</span></li>
+          </ol>
+        </div>
+        <div class="pub-group" data-group="book">
+          <h3 class="pub-group-title">Authored Books &amp; Book Chapters</h3>
+          <ol class="pub-list">
+            <li class="reveal"><span class="pub-cite">Onat, A., Ozkan, M. (2014). A Combined Direct and Indirect Adaptive Control Scheme for a Wheeled Mobile Robot using Multiple Models. In <em>Lecture Notes in Electrical Engineering Series — Informatics in Control Automation and Robotics</em>. Springer International Publishing.</span></li>
+          </ol>
+        </div>
+
+        <div class="pub-group" data-group="national">
+          <h3 class="pub-group-title">Articles in National Refereed Journals</h3>
+          <ol class="pub-list">
+            <li class="reveal"><span class="pub-cite">Onat, A. (2024). Application of a Modified Joint Unscented Kalman Filter for Parameter Estimation of a Class of Mechanical Systems. <em>Karadeniz Fen Bilimleri Dergisi</em>, 14(4).</span></li>
+          </ol>
+        </div>
+
+        <div class="pub-group" data-group="other">
+          <h3 class="pub-group-title">Technical Notes &amp; Editorials</h3>
+          <ol class="pub-list">
+            <li class="reveal"><span class="pub-cite">Zhao, Y., … Onat, A., … (2023). Editorial Article — 2022 the 4th International Conference on Modeling, Simulation, Optimization and Algorithm (ICMSOA 2022), 12 November 2022. <em>Journal of Physics: Conference Series</em>, 2508.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Teaching ===== -->
+    <section class="section section-alt" id="teaching">
+      <div class="container">
+        <h2 class="section-title reveal">Teaching</h2>
+        <p class="section-lead reveal">Courses taught at Eskisehir Technical University (2023–2025), all in English.</p>
+        <div class="teaching-grid">
+          <div class="teach-card reveal">
+            <h3><span class="teach-level">Bachelor's</span></h3>
+            <ul>
+              <li>Engineering Mathematics and Statistics</li>
+              <li>Engineering Computations</li>
+              <li>Research in Control and Systems Theory I</li>
+              <li>Research in Control and Systems Theory II</li>
+              <li>Electrical and Electronics Design Project I</li>
+              <li>Electrical and Electronics Design Project II</li>
+              <li>Professional Aspects of Electrical &amp; Electronics Engineering</li>
+              <li>Seminar</li>
+            </ul>
+          </div>
+          <div class="teach-card reveal">
+            <h3><span class="teach-level">Master's</span></h3>
+            <ul>
+              <li>Machine Learning for Dynamical Systems and Control</li>
+              <li>Seminar</li>
+            </ul>
+          </div>
+          <div class="teach-card reveal">
+            <h3><span class="teach-level">Doctorate</span></h3>
+            <ul>
+              <li>Estimation Theory</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-grid">
+          <a class="contact-card reveal" href="mailto:altanonat@eskisehir.edu.tr">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>altanonat@eskisehir.edu.tr</p>
+          </a>
+          <a class="contact-card reveal" href="tel:+902223213550">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>Phone</h3>
+            <p>+90 222 321 3550</p>
+          </a>
+          <div class="contact-card reveal">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Office</h3>
+            <p>Eskisehir Technical University, Iki Eylul Campus<br />Dept. of Electrical and Electronics Engineering<br />26555 Eskisehir, Turkiye</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo">AO<span>.</span></a>
+      <p>© <span id="year">2026</span> Altan Onat · Eskisehir Technical University</p>
+      <a href="#home" class="back-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
