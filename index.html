@@ -470,17 +470,18 @@
           it will be delivered straight to my inbox.
         </p>
         <!--
-          Messages are delivered to altanonat@engineer.com via FormSubmit
-          (https://formsubmit.co) — a free form-to-email service, no account needed.
-          ONE-TIME ACTIVATION: the very first submission triggers a confirmation
-          e-mail to altanonat@engineer.com — click the link in it once, and
-          from then on every message arrives directly in that inbox.
+          Messages are delivered to your inbox via Web3Forms (https://web3forms.com)
+          — free: 250 submissions/month, no branding, built-in spam protection.
+          ONE-TIME SETUP: get your free access key by entering your email at
+          https://web3forms.com (takes ~30 seconds), then replace
+          YOUR_ACCESS_KEY below with the key.
         -->
         <form class="message-form reveal" id="messageForm"
-              action="https://formsubmit.co/ajax/altanonat@engineer.com" method="POST">
-          <input type="hidden" name="_subject" value="New message from your website" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" />
+              action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="dc4618ed-e5bd-43a8-abc7-4016c07569ef" />
+          <input type="hidden" name="subject" value="New message from your website" />
+          <input type="hidden" name="from_name" value="Website Contact Form" />
+          <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <div class="form-field">
               <label for="msg-name">Your Name</label>
