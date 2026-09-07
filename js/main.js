@@ -148,6 +148,45 @@
     sections.forEach(function (s) { spy.observe(s); });
   }
 
+  /* ---------- Private message form (AJAX submit) ---------- */
+  const form = document.getElementById("messageForm");
+  const status = document.getElementById("formStatus");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Form backend not configured yet: guide the site owner
+      if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
+        status.textContent = "The messaging service is not configured yet. Please use the email address above.";
+        status.className = "form-status error";
+        return;
+      }
+
+      status.textContent = "Sending...";
+      status.className = "form-status";
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (res) {
+          if (res.ok) {
+            status.textContent = "Thank you! Your message has been sent.";
+            status.className = "form-status success";
+            form.reset();
+          } else {
+            throw new Error("Request failed");
+          }
+        })
+        .catch(function () {
+          status.textContent = "Something went wrong. Please try again or use the email address above.";
+          status.className = "form-status error";
+        });
+    });
+  }
+
   /* ---------- Footer year ---------- */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
