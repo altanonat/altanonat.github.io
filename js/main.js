@@ -156,13 +156,6 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Form backend not configured yet: guide the site owner
-      if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
-        status.textContent = "The messaging service is not configured yet. Please use the email address above.";
-        status.className = "form-status error";
-        return;
-      }
-
       status.textContent = "Sending...";
       status.className = "form-status";
 

@@ -470,12 +470,17 @@
           it will be delivered straight to my inbox.
         </p>
         <!--
-          NOTE: GitHub Pages is static, so the form uses a third-party form backend.
-          To activate it: create a free form at https://formspree.io (point it to
-          altanonat@eskisehir.edu.tr) and replace YOUR_FORM_ID below with your form ID.
+          Messages are delivered to altanonat@eskisehir.edu.tr via FormSubmit
+          (https://formsubmit.co) — a free form-to-email service, no account needed.
+          ONE-TIME ACTIVATION: the very first submission triggers a confirmation
+          e-mail to altanonat@eskisehir.edu.tr — click the link in it once, and
+          from then on every message arrives directly in that inbox.
         -->
         <form class="message-form reveal" id="messageForm"
-              action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              action="https://formsubmit.co/ajax/altanonat@eskisehir.edu.tr" method="POST">
+          <input type="hidden" name="_subject" value="New message from your website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <div class="form-field">
               <label for="msg-name">Your Name</label>

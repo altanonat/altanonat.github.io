@@ -644,6 +644,7 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
 .form-field textarea { resize: vertical; min-height: 140px; }
 .form-submit { border: none; cursor: pointer; font-family: var(--font-body); }
 .form-status { margin-top: 14px; font-size: 0.92rem; font-weight: 500; }
+.hp-field { display: none !important; }
 .form-status.success { color: var(--accent); }
 .form-status.error { color: #e03131; }
 
