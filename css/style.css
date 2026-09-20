@@ -599,14 +599,14 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
 .material-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--primary); }
 
 .material-icon {
-  width: 58px; height: 58px;
-  margin-bottom: 18px;
+  width: 42px; height: 42px;
+  margin-bottom: 14px;
   display: grid; place-items: center;
-  border-radius: 16px;
+  border-radius: 12px;
   background: var(--primary-soft);
   color: var(--primary);
 }
-.material-icon svg { width: 26px; height: 26px; }
+.material-icon svg { width: 20px; height: 20px; }
 
 .material-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
 .material-card p { color: var(--text-muted); font-size: 0.92rem; }
