@@ -579,38 +579,6 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
 .contact-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
 .contact-card p { color: var(--text-muted); font-size: 0.92rem; word-break: break-word; }
 
-/* ---------- Course Materials ---------- */
-.materials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-.material-card {
-  display: block;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 28px;
-  box-shadow: var(--shadow);
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-.material-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--primary); }
-
-.material-icon {
-  width: 42px; height: 42px;
-  margin-bottom: 14px;
-  display: grid; place-items: center;
-  border-radius: 12px;
-  background: var(--primary-soft);
-  color: var(--primary);
-}
-.material-icon svg { width: 20px; height: 20px; }
-
-.material-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
-.material-card p { color: var(--text-muted); font-size: 0.92rem; }
-
 /* ---------- Message Form ---------- */
 .message-form {
   max-width: 720px;
