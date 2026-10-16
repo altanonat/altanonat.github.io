@@ -546,6 +546,53 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
   background: linear-gradient(120deg, var(--primary), var(--accent));
 }
 
+/* ---------- Game banner (EvoMerge) ---------- */
+.game-banner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 34px 36px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.game-banner::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+}
+.game-banner:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary);
+}
+.game-emoji {
+  flex: 0 0 auto;
+  font-size: 3.4rem;
+  line-height: 1;
+  width: 84px; height: 84px;
+  display: grid; place-items: center;
+  border-radius: 22px;
+  background: var(--primary-soft);
+}
+.game-body { flex: 1 1 auto; min-width: 0; }
+.game-body h3 { font-size: 1.3rem; margin-bottom: 8px; }
+.game-body p { color: var(--text-muted); font-size: 0.97rem; margin-bottom: 18px; }
+.game-body p strong { color: var(--text); }
+.game-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+@media (max-width: 600px) {
+  .game-banner { flex-direction: column; text-align: center; padding: 28px 22px; }
+  .game-banner::before { left: 0; right: 0; top: 0; bottom: auto; width: auto; height: 6px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+  .game-actions { justify-content: center; }
+}
+
 /* ---------- Contact ---------- */
 .contact-grid {
   display: grid;
@@ -578,6 +625,51 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
 
 .contact-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
 .contact-card p { color: var(--text-muted); font-size: 0.92rem; word-break: break-word; }
+
+/* ---------- Course Materials ---------- */
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.material-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary);
+}
+.material-icon {
+  flex: 0 0 auto;
+  width: 54px; height: 54px;
+  display: grid; place-items: center;
+  border-radius: 14px;
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+.material-icon svg { width: 25px; height: 25px; }
+.material-body { flex: 1 1 auto; min-width: 0; }
+.material-body h3 { font-size: 1.02rem; margin-bottom: 4px; }
+.material-body p { color: var(--text-muted); font-size: 0.88rem; }
+.material-arrow {
+  flex: 0 0 auto;
+  width: 20px; height: 20px;
+  color: var(--text-muted);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.material-card:hover .material-arrow { color: var(--primary); transform: translate(3px, -3px); }
 
 /* ---------- Message Form ---------- */
 .message-form {
@@ -702,4 +794,6 @@ h1, h2, h3 { font-family: var(--font-head); line-height: 1.25; }
   .timeline-card { padding: 20px; }
   .form-row { grid-template-columns: 1fr; }
   .message-form { padding: 26px 20px; }
+  .material-card { padding: 22px 20px; gap: 14px; }
+  .material-icon { width: 46px; height: 46px; }
 }
